@@ -1,0 +1,3 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+test("Codagen package identity", () => { assert.equal("codagen", "codagen"); });
