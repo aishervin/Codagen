@@ -1,0 +1,15 @@
+name = "codagen"
+main = "src/worker/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+[[d1_databases]]
+binding = "DB"
+database_name = "codagen-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+[vars]
+APP_ENV = "production"
